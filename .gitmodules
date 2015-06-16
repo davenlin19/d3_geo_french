@@ -1,0 +1,3 @@
+[submodule "france-geojson"]
+	path = france-geojson
+	url = git@github.com:gregoiredavid/france-geojson.git
