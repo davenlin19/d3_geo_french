@@ -1,0 +1,23 @@
+{
+  "name": "d3_geo_french",
+  "version": "0.0.0",
+  "homepage": "https://github.com/davenlin19/d3_geo_french",
+  "authors": [
+    "lampt <lampt2509@gmail.com>"
+  ],
+  "description": "A visualization for French map",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "*"
+  }
+}
