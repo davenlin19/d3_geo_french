@@ -21,13 +21,14 @@ def index():
 @app.route("/maladie/projects")
 def maladie_projects():
     connection    = MongoClient(MONGODB_HOST, MONGODB_PORT)
-    collection    = connection[DBS_NAME][COLLECTION_NAME]
+    db            = connection[DBS_NAME];
+    collection    = db[COLLECTION_NAME]
     people        = collection.find()
     json_projects = []
     for person in people:
         json_projects.append(person)
     json_projects = json.dumps(json_projects, default=json_util.default)
-    connection.disconnect()
+    connection.close()
     return json_projects
 
 if __name__ == "__main__":
