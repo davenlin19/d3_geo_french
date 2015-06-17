@@ -1,0 +1,8 @@
+.arrondissement {
+	cursor: pointer;
+}
+
+.arrondissement:hover {
+	stroke: white;
+	stroke-width: 1px;
+}

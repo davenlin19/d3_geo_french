@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/dc.js/web/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/dc.js/dc.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom/style.css') }}">
+</head>
+<body class="application">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="chart-wrapper">
+							<div class="chart-title">
+								Nombre des malades par age
+							</div>
+							<div class="chart-stage">
+								<div id="time-chart"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="chart-wrapper">
+							<div class="chart-title">
+								Nombre des malades par métier
+							</div>
+							<div class="chart-stage">
+								<div id="resource-type-row-chart"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="chart-wrapper">
+							<div class="chart-title">
+								Nombre des malades par civilité
+							</div>
+							<div class="chart-stage">
+								<div id="poverty-level-row-chart"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="chart-wrapper">
+					<div class="chart-title">
+						Visualisation du nombre des malades sur la carte de la France
+					</div>
+					<div class="chart-stage">
+						<div id="us-chart"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="chart-wrapper">
+					<div class="chart-title">
+						Nombre des malades
+					</div>
+					<div class="chart-stage">
+						<div id="number-projects-nd"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="chart-wrapper">
+					<div class="chart-title">
+						Nombre des malades décédés
+					</div>
+					<div class="chart-stage">
+						<div id="total-donations-nd"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="{{ url_for('static', filename='bower_components/jquery/dist/jquery.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='bower_components/dc.js/web/js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='bower_components/dc.js/web/js/crossfilter.js') }}"></script>
+	<script src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>
+	<script src="{{ url_for('static', filename='bower_components/dc.js/web/js/dc.js') }}"></script>
+	<script src="{{ url_for('static', filename='queue/queue.js') }}"></script>
+	<script src="{{ url_for('static', filename='dashboards/assets/lib/keen-js/dist/keen.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='custom/graphs.js') }}></script>
+</body>
+</html>

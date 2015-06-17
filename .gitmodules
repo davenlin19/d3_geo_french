@@ -1,3 +1,9 @@
 [submodule "france-geojson"]
 	path = france-geojson
 	url = git@github.com:gregoiredavid/france-geojson.git
+[submodule "queue"]
+	path = queue
+	url = git@github.com:mbostock/queue.git
+[submodule "dashboards"]
+	path = dashboards
+	url = git@github.com:keen/dashboards.git
