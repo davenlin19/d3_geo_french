@@ -6,7 +6,7 @@ import os
 from bson import json_util
 from bson.json_util import dumps
 
-STATIC_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
 app = Flask(__name__, static_folder = STATIC_DIR)
 
 MONGODB_HOST    = 'localhost'
