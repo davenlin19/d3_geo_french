@@ -6,3 +6,19 @@
 	stroke: white;
 	stroke-width: 1px;
 }
+
+.map-container {
+	padding-top: 20px;
+}
+
+.map-container .titre {
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.map-container .label.nb-malade,
+.map-container .content.nb-malade {
+	font-size: 17px;
+	color: black;
+}

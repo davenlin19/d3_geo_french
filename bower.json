@@ -20,6 +20,7 @@
 	"dependencies": {
 		"d3": "*",
 		"dc.js": "*",
-		"jquery": "*"
+		"jquery": "*",
+		"bootstrap": "*"
 	}
 }

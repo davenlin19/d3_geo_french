@@ -2,16 +2,16 @@
 <html>
 <head>
 	<title>Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/dc.js/web/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/dc.js/dc.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom/style.css') }}">
 </head>
 <body class="application">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-md-6">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-md-12">
 						<div class="chart-wrapper">
 							<div class="chart-title">
 								Nombre des malades par age
@@ -21,7 +21,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-md-6">
 						<div class="chart-wrapper">
 							<div class="chart-title">
 								Nombre des malades par métier
@@ -31,7 +31,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-md-6">
 						<div class="chart-wrapper">
 							<div class="chart-title">
 								Nombre des malades par civilité
@@ -44,34 +44,13 @@
 				</div>
 			</div>
 
-			<div class="col-sm-6">
-				<div class="chart-wrapper">
-					<div class="chart-title">
-						Visualisation du nombre des malades sur la carte de la France
+			<div class="col-md-6">
+				<div class="row">
+					<div class="map-container">
+						<h3 class="titre">Visualisation du nombre des malades sur la carte de la France</h3>
+						<span class="label nb-malade">Nombre des malades:</span>
+						<span class="content nb-malade">0</span>
 						<div id="map"></div>
-					</div>
-					<div class="chart-stage">
-						<div id="us-chart"></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="chart-wrapper">
-					<div class="chart-title">
-						Nombre des malades
-					</div>
-					<div class="chart-stage">
-						<div id="number-projects-nd"></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="chart-wrapper">
-					<div class="chart-title">
-						Nombre des malades décédés
-					</div>
-					<div class="chart-stage">
-						<div id="total-donations-nd"></div>
 					</div>
 				</div>
 			</div>
@@ -84,5 +63,13 @@
 	<script src="{{ url_for('static', filename='bower_components/d3/d3.js') }}"></script>
 	<script src="{{ url_for('static', filename='bower_components/dc.js/web/js/dc.js') }}"></script>
 	<script src="{{ url_for('static', filename='custom/graphs.js') }}"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.arrondissement').click(function() {
+				// alert($(this).attr('nb_malades'));
+				alert("bon");
+			});
+		});
+	</script>
 </body>
 </html>
