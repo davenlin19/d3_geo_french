@@ -1,4 +1,7 @@
-.arrondissement {
+.arrondissement,
+#civilite-stat div,
+#metier-stat div,
+#age-stat div {
 	cursor: pointer;
 }
 
@@ -21,4 +24,101 @@
 .map-container .content.nb-malade {
 	font-size: 17px;
 	color: black;
+}
+
+#civilite-stat div {
+  font: 10px sans-serif;
+  text-align: left;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.civilite-stat-container,
+.metier-stat-container,
+.age-stat-container {
+	padding-left: 10px;
+	margin-top: 50px;
+}
+
+#civilite-stat div:hover,
+#metier-stat div:hover,
+#age-stat div:hover {
+	background-color: #6BAED6 !important;
+}
+
+#civilite-stat div[name="homme"] {
+	background-color: #009900;
+}
+
+#civilite-stat div[name="homme"]::before {
+	content: "Homme : ";
+}
+
+#civilite-stat div[name="femme"] {
+	background-color: #FF66FF;
+}
+
+#civilite-stat div[name="femme"]::before {
+	content: "Femme : ";
+}
+
+#metier-stat div {
+	padding-left: 5px;
+	font-size: 10px;
+}
+
+#metier-stat div[name="police"] {
+	background-color: #3366FF;
+}
+
+#metier-stat div[name="police"]::before {
+	content: "Police : ";
+}
+
+#metier-stat div[name="developper"] {
+	background-color: #ccc;
+}
+
+#metier-stat div[name="developper"]::before {
+	content: "Developper : ";
+}
+
+#metier-stat div[name="manager"] {
+	background-color: #f00;
+}
+
+#metier-stat div[name="manager"]::before {
+	content: "Manager : ";
+}
+
+#metier-stat div[name="ouvrier"] {
+	background-color: #0f0;
+}
+
+#metier-stat div[name="ouvrier"]::before {
+	content: "Ouvrier : ";
+}
+
+#metier-stat div[name="designer"] {
+	background-color: #ff0;
+}
+
+#metier-stat div[name="designer"]::before {
+	content: "Designer : ";
+}
+
+#metier-stat div[name="consultant"] {
+	background-color: #c90;
+}
+
+#metier-stat div[name="consultant"]::before {
+	content: "Consultant : ";
+}
+
+#age-stat div {
+	display: inline-block;
+	width: 10px;
+	text-align: center;
+	font-size: 8px;
 }

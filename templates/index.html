@@ -11,35 +11,15 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="chart-wrapper">
-							<div class="chart-title">
-								Nombre des malades par age
-							</div>
-							<div class="chart-stage">
-								<div id="time-chart"></div>
-							</div>
-						</div>
+					<div class="metier-stat-container">
+						<h4 class="titre">Nombre de malades par métier</h4>
+						<div id="metier-stat"></div>
 					</div>
-					<div class="col-md-6">
-						<div class="chart-wrapper">
-							<div class="chart-title">
-								Nombre des malades par métier
-							</div>
-							<div class="chart-stage">
-								<div id="resource-type-row-chart"></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="chart-wrapper">
-							<div class="chart-title">
-								Nombre des malades par civilité
-							</div>
-							<div class="chart-stage">
-								<div id="poverty-level-row-chart"></div>
-							</div>
-						</div>
+				</div>
+				<div class="row">
+					<div class="civilite-stat-container">
+						<h4 class="titre">Nombre de malades par civilité</h4>
+						<div id="civilite-stat"></div>
 					</div>
 				</div>
 			</div>
@@ -47,11 +27,19 @@
 			<div class="col-md-6">
 				<div class="row">
 					<div class="map-container">
-						<h3 class="titre">Visualisation du nombre des malades sur la carte de la France</h3>
+						<h3 class="titre">Visualisation du nombre de malades sur la carte de la France</h3>
 						<span class="label nb-malade">Nombre des malades:</span>
 						<span class="content nb-malade">0</span>
 						<div id="map"></div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="age-stat-container">
+					<h4 class="titre">Nombre de malades par age</h4>
+					<div id="age-stat"></div>
 				</div>
 			</div>
 		</div>
